@@ -11,6 +11,7 @@
     "clean": "rimraf dist",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
     "prod": "cross-env NODE_ENV=production node index.js",
+    "pretty-quick": "pretty-quick",
     "type-check-client": "tsc -p ./src/client/tsconfig.json",
     "build-client": "cross-env NODE_ENV=production TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack --mode production",
     "build-server": "tsc -b src/server",

@@ -11,8 +11,8 @@ import { NavLink } from 'react-router-dom';
 
 class NavLinkMui extends React.Component<any> {
   render() {
-      const { forwardedRef, to, ...props } = this.props
-      return <NavLink {...props} ref={forwardedRef} to={to} />
+    const { forwardedRef, to, ...props } = this.props;
+    return <NavLink {...props} ref={forwardedRef} to={to} />;
   }
 }
 

@@ -4,10 +4,13 @@ import { apiRouter } from './routes/api-router';
 import { pagesRouter } from './routes/pages-router';
 import { staticsRouter } from './routes/statics-router';
 import * as config from './config';
+import { starter } from './scripts/starter-script';
 
+// starter();
 console.log(`*******************************************`);
 console.log(`NODE_ENV: ${process.env.NODE_ENV}`);
 console.log(`config: ${JSON.stringify(config, null, 2)}`);
+console.log(`DB URI: ${process.env.DATABASE_URL}`);
 console.log(`*******************************************`);
 
 const app = express();

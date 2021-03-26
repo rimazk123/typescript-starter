@@ -81,6 +81,8 @@ git push -u origin master
 - `npm start` - Just runs `node ./dist/server/server.js`
 - `npm start:prod` - sets `NODE_ENV` to `production` and then runs `node ./dist/server/server.js`. (Bypassing webpack proxy)
 
+This repo uses Prisma for database migrations and integrations, for more info on how to use Prisma's CLI read here: https://www.prisma.io/docs/reference/api-reference/command-reference.
+
 ### Config
 
 All applications require a config mechanism, for example, `SLACK_API_TOKEN`. Things that you don't want in your git history, you want a different environment to have different value (dev/staging/production). This repo uses the file `config.ts` to access all your app variables. And a `.env` file to override variable in dev environment. This file is ignored from git.

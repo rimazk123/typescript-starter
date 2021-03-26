@@ -2,11 +2,13 @@
 
 <img src="https://github.com/gilamran/fullstack-typescript/raw/master/assets/images/logo.png" width="150">
 
+This is a template based off of this one: https://github.com/gilamran/fullstack-typescript
+
 ---
 
 ## Quick Start
 
-Just clone this repository into your own project folder. and start working
+Just clone this repository into your own project folder
 
 ```bash
 git clone https://github.com/gilamran/fullstack-typescript.git <MyProjectName>
@@ -71,8 +73,10 @@ git push -u origin master
 - [Jest](https://github.com/facebook/jest)
 - [Styled Components](https://github.com/styled-components/styled-components)
 - [Axios](https://github.com/mzabriskie/axios) (For Client/Server communication)
+- [Prisma](https://github.com/prisma/prisma) (ORM)
 
 ### Usage
+Before getting started, make sure you have a .env file that sets 
 
 - `npm run dev` - Client and server are in watch mode with source maps, opens [http://localhost:3000](http://localhost:3000)
 - `npm run test` - Runs jest tests
@@ -81,7 +85,7 @@ git push -u origin master
 - `npm start` - Just runs `node ./dist/server/server.js`
 - `npm start:prod` - sets `NODE_ENV` to `production` and then runs `node ./dist/server/server.js`. (Bypassing webpack proxy)
 
-This repo uses Prisma for database migrations and integrations, for more info on how to use Prisma's CLI read here: https://www.prisma.io/docs/reference/api-reference/command-reference.
+This repo uses Prisma as an ORM, for more info on how to use Prisma's CLI read here: https://www.prisma.io/docs/reference/api-reference/command-reference.
 
 ### Config
 
